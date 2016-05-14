@@ -1,14 +1,17 @@
 p5js -- Small Projects, Key Concepts
 ------------------------------------
-#### Draw a point in the middle of the darwing canvas. 
+##### Branches will represent small projects focused on specific JavaScript programning concepts using p5js as a learning vehicle. 
 
 **Instructions:**
 
-1. Draw a point on the middle of the canvas element.
-    * Place `setup()` and `draw()` functions in `<script>` element 
-    and in the html of an index.html web page.
-2. Move `setup()` and `draw()` functions to a JavaScript file
- and link it from index.html usign a `<script>` element.
-   
-p5js online reference: 
-    [p5js Programming Toolbox ](http://p5js.org/reference/)
+Clone repository to empty directory, adding .git at the end so that all the branches are cloned. 
+
+git clone https://github.com/aurelianonava/myp5js.git .git
+    
+    Then: 
+        
+        1. git config --boot core.bare flase
+        2. git reset --hard
+ 
+ .........work in progress.....
+
