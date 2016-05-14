@@ -14,4 +14,7 @@ Then:
         2. git reset --hard
  
  .........work in progress.....
+ 
+ `this is a code block.......`
+ 
 
