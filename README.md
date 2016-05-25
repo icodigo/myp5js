@@ -1,6 +1,16 @@
 p5js -- Small Projects, Key Concepts
 ------------------------------------
-##### Branches will represent small projects focused on specific JavaScript programning concepts using p5js as a learning vehicle. 
+### Project branch organization and purpose
+
+1. Project features are branches where the actual work takes place.
+2. All changes will be pushed to feature branches. 
+3. If the feature's objective is reached, changes are merged to the develop
+ branch and the feature branch is removed and a new feature branch can be
+ created for new objectives. 
+4. If feature branch objective is not reached, branch can be left for the future
+ or removed. 
+5. Branches will be project features and named according to issues created (note: issues are numbered, so branch features
+ will have this issue number associated with it ) and should be related to a feature's objective. 
 
 **Instructions:**
 
@@ -13,8 +23,6 @@ Then:
         1. git config --boot core.bare flase
         2. git reset --hard
  
- .........work in progress.....
- 
- `this is a code block.......`
+ Refer to [repository wiki](https://github.com/aurelianonava/myp5js/wiki "Repository Wiki") for more information. 
  
 
