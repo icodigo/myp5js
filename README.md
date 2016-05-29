@@ -4,17 +4,12 @@ p5js -- Small Projects, Key Concepts
 
 **Instructions:**
 
-To clone repository this repository with all branches to an empty directory. 
 
-git clone https://github.com/aurelianonava/myp5js.git .git
+
+Clone repository  
+
+git clone https://github.com/aurelianonava/myp5js.git .
     
 Then: 
-        
-        1. git config --boot core.bare flase
-        2. git reset --hard
- 
- .........work in progress.....
- 
- `this is a code block.......`
  
 
