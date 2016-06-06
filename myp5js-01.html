@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>Augustus Hawkins</h1>
+            <h3>What matters most</h3><small>Our present reality</small>
+        </section>
+
+        <section>
+
+            <section>
+                <h2>Angular:</h2>
+                <h3>Component Tree Model</h3>
+                <img class="fragment" src="img/component-tree.png" alt="">
+                <p class="fragment">The initial parent component is bootstrapped and due to this tree sturture model
+                components interact with each other.</p>
+            </section>
+
+            <section>
+                <img src="img/HTML-DOM-Tree.png"></img>
+
+            </section>
+
+            <section>
+
+                <p>
+                    A component in Angular is used to render a portion of html
+                    and provide functionality to that portion.
+                </p>
+                
+                <p class="fragment">And this is done through a Component's class</p>
+
+                <p class="fragment">...a TypeScript Class</p>
+                <p class="fragment">And here is where application logic
+                is defined for our components.</p>
+                
+                <code class="hljs fragment">class AppComponent {
+                }
+                </code>
+            </section>
+
+            <section>
+                So, a component's TypeScript class, can have its properties and methods referenced
+                from the component's template.
+<pre><code class="hljs fragment" >
+    @Component({
+        selector: 'media-item',
+        template: '{{ mediaItem.name }}'
+})
+    class AppComponent {
+        mediaItem = {
+            name: "Plato"
+        }
+    }
+                </code></pre>
+            </section>
+
+            <section>
+                With each component you can specify an html template, the markup that
+                will get rendered, and from here reference properties and methods in the
+                compponent's class.
+            </section>
+
+            <section>
+                <h2>Dependency Injection</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+function Person() {
+  this.name = "Plato";    // instance variable
+}
+
+function sayHelloPerson() {
+    var person = new Person();
+    console.log("Hello " + person.name);
+}
+</code></pre>
+                
+            </section>
+
+            <section>
+                sayHello(); <br>
+                Hello Plato
+            </section>
+
+            <section>
+                In this example we have the function creating an object instance:
+<pre>
+<code class="hljs fragment">
+function sayHelloPerson() {
+    var person = new Person();
+    console.log("Hello " + person.name);
+}
+</code>
+</pre>
+
+<p class="fragment">
+    But, what we really want to do is have the Person object instance created by a parameter passed to a constructor function:
+</p>
+
+            </section>
+
+            <section>
+<pre>
+<code class="hljs">
+    function sayHelloPerson(person) {
+        console.log("Hello " + person.name);
+}
+
+var person = new Person();
+sayHelloPerson(person);
+Hello Plato
+</code>
+</pre>
+            </section>
+
+            
+            <section>
+                <p>Our Immediate Goal:</p>
+                <p class="fragment">
+                    As I see it, but some of you might see it in another way, should be to know how to do this with TypeScript and pass on data in created in its classes to angular components and sub-components.
+                </p>
+                 
+            </section> 
+
+            <section>
+                How do we do this as a learning, networking, and support web technolgy group?
+            </section>
+
+
+        </section>
+
+
+
+        <!-- Example of nested vertical slides -->
+        <section>
+            <section>
+                <h2>Vertical Slides</h2>
+                <p>Slides can be nested inside of each other.</p>
+                <p>Use the <em>Space</em> key to navigate through all slides.</p>
+                <br>
+                <a href="#" class="navigate-down">
+                    <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+                </a>
+            </section>
+            <section>
+                <h2>Basement Level 1</h2>
+                <p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+            </section>
+            <section>
+                <h2>Basement Level 2</h2>
+                <p>That's it, time to go back up.</p>
+                <br>
+                <a href="#/2">
+                    <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+                </a>
+            </section>
+        </section>
+
+        <section>
+            New section.....
+        </section>
+			
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
