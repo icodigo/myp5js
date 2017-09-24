@@ -1,6 +1,9 @@
 p5js -- Small Projects, Key Concepts
 ------------------------------------
 ### Project branch organization and purpose (Note: Obviously, this explanation can be re-worded so that it is suitable to middle school students )
+-------------------------------->>>>>>>>>>>>>>>>
+
+
 
 1. Project features are branches where the actual work takes place.
 2. All changes will be pushed to feature branches. 
